@@ -8,11 +8,11 @@ class BlobService(object):
     """
     """
 
-    def __init__(self, copy_from_container, copy_to_container, blob_name, blob_url, client_id) -> None:
+    def __init__(self, credential, copy_from_container, copy_to_container, blob_name, blob_url) -> None:
         self.copy_from_container = copy_from_container
         self.copy_to_container = copy_to_container
         self.blob_name = blob_name
-        self.credential = DefaultAzureCredential(managed_identity_client_id=client_id)
+        self.credential = credential
         self.blob_url = blob_url
         self.blob_service_client = BlobServiceClient(account_url=blob_url, credential=self.credential)
         
