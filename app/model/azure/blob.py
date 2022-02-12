@@ -1,8 +1,6 @@
 # from azure.storage.blob import BlockBlobService
 from azure.storage.blob.aio import BlobServiceClient
-from azure.keyvault.secrets.aio import SecretClient
 from azure.identity.aio import DefaultAzureCredential
-import os
 import io
 import shutil
 
