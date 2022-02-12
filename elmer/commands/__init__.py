@@ -1,8 +1,8 @@
 import argparse
 import logging
 
-from app.model.azure.auth import AuthService
-from app.model.azure.blob import BlobService
+from elmer.model.azure.auth import AuthService
+from elmer.model.azure.blob import BlobService
 import asyncio
 
 def entrypoint(args=None):
