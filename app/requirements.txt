@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+uWSGI
+python-gnupg 
+fs
+aiohttp
+azure-storage-blob
+azure-identity
+azure-keyvault-secrets
